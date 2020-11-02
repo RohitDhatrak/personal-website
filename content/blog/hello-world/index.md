@@ -1,7 +1,7 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
+title: Time and Space Complexity
+date: "2020-11-01T22:12:03.284Z"
+description: "Time Complexity is used to see how our algorithm scales"
 ---
 
 This is my first post on my new fake blog! How exciting!

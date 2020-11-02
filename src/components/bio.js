@@ -52,7 +52,7 @@ const Bio = () => {
         />
       )}
       {author?.name && (
-        <p>
+        <p className="bio-desc">
           Hi, I'm <strong>{author.name}</strong>. {author?.summary || null}
           {` `}
         </p>

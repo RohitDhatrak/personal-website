@@ -288,6 +288,7 @@ a:focus {
 
 .bio {
   display: flex;
+  flex-wrap: wrap;
   margin-bottom: var(--spacing-16);
 }
 

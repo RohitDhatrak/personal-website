@@ -58,9 +58,18 @@ const Bio = () => {
         </p>
       )}
       <p>
-        <a href="https://twitter.com/rohit_dhatrak_">Twitter</a>&nbsp;
-        <a href="https://www.linkedin.com/in/rohitdhatrak/">LinkedIn</a>&nbsp;
-        <a href="https://www.instagram.com/rohit_dhatrak_/">Instagram</a>&nbsp;
+        <a href="https://twitter.com/rohit_dhatrak_">
+          <img>src = "../../content/assets/twitter.svg"</img>
+        </a>
+        &nbsp;
+        <a href="https://www.linkedin.com/in/rohitdhatrak/">
+          <img>src = "../../content/assets/linkedin.svg"</img>
+        </a>
+        &nbsp;
+        <a href="https://www.instagram.com/rohit_dhatrak_/">
+          <img>src = "../../content/assets/insta.svg"</img>
+        </a>
+        &nbsp;
       </p>
     </div>
   )

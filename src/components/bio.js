@@ -42,21 +42,21 @@ const Bio = () => {
       }
       linkedin: file(absolutePath: { regex: "/linkedin.png/" }) {
         childImageSharp {
-          fixed(width: 35, height: 35) {
+          fixed(width: 20, height: 20) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       github: file(absolutePath: { regex: "/github.png/" }) {
         childImageSharp {
-          fixed(width: 35, height: 35) {
+          fixed(width: 20, height: 20) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       instagram: file(absolutePath: { regex: "/instagram.png/" }) {
         childImageSharp {
-          fixed(width: 35, height: 35) {
+          fixed(width: 20, height: 20) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -69,7 +69,6 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   const avatar = data?.avatar?.childImageSharp?.fixed
-  const social1 = data?.avatar?.childImageSharp?.fixed
 
   return (
     <div className="bio">

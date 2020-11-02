@@ -57,6 +57,11 @@ const Bio = () => {
           {` `}
         </p>
       )}
+      <p>
+        <a href="https://twitter.com/rohit_dhatrak_">Twitter</a>&nbsp;
+        <a href="https://www.linkedin.com/in/rohitdhatrak/">LinkedIn</a>&nbsp;
+        <a href="https://www.instagram.com/rohit_dhatrak_/">Instagram</a>&nbsp;
+      </p>
     </div>
   )
 }

@@ -24,11 +24,11 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
+      {/* <footer>
         <a href="https://twitter.com/rohit_dhatrak_">Twitter</a>&nbsp;
         <a href="https://www.linkedin.com/in/rohitdhatrak/">LinkedIn</a>&nbsp;
         <a href="https://www.instagram.com/rohit_dhatrak_/">Instagram</a>&nbsp;
-      </footer>
+      </footer> */}
     </div>
   )
 }

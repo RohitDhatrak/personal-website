@@ -33,28 +33,28 @@ const Bio = () => {
           }
         }
       }
-      twitter: file(relativePath: { eq: "twitter.svg" }) {
+      twitter: file(absolutePath: { regex: "/twitter.svg/" }) {
         childImageSharp {
           fixed(width: 35, height: 35) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      linkedin: file(relativePath: { eq: "linkedin.svg" }) {
+      linkedin: file(absolutePath: { regex: "/linkedin.svg/" }) {
         childImageSharp {
           fixed(width: 35, height: 35) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      github: file(relativePath: { eq: "github.svg" }) {
+      github: file(absolutePath: { regex: "/github.svg/" }) {
         childImageSharp {
           fixed(width: 35, height: 35) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      instagram: file(relativePath: { eq: "instagram.svg" }) {
+      instagram: file(absolutePath: { regex: "/instagram.svg/" }) {
         childImageSharp {
           fixed(width: 35, height: 35) {
             ...GatsbyImageSharpFixed

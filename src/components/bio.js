@@ -27,6 +27,37 @@ const Bio = () => {
           }
           social {
             twitter
+            linkedin
+            github
+            instagram
+          }
+        }
+      }
+      twitter: file{relativePath: {eq: "twitter.svg"}} {
+        childImageSharp {
+          fixed(width: 35, height: 35) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      linkedin: file{relativePath: {eq: "linkedin.svg"}} {
+        childImageSharp {
+          fixed(width: 35, height: 35) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      github: file{relativePath: {eq: "github.svg"}} {
+        childImageSharp {
+          fixed(width: 35, height: 35) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      instagram: file{relativePath: {eq: "instagram.svg"}} {
+        childImageSharp {
+          fixed(width: 35, height: 35) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -57,20 +88,20 @@ const Bio = () => {
           {` `}
         </p>
       )}
-      <p>
-        <a href="https://twitter.com/rohit_dhatrak_">
-          <img>src = "../../content/assets/twitter.svg"</img>
+      <div>
+        <a href={`https://twitter.com/${social.twitter}`} target="_blank">
+          <Image fixed={data.twitter.childImageSharp.fixed} alt="twitter" />
         </a>
-        &nbsp;
-        <a href="https://www.linkedin.com/in/rohitdhatrak/">
-          <img>src = "../../content/assets/linkedin.svg"</img>
+        <a href={`https://linkedin.com/${social.linkedin}`} target="_blank">
+          <Image fixed={data.linkedin.childImageSharp.fixed} alt="linked in" />
         </a>
-        &nbsp;
-        <a href="https://www.instagram.com/rohit_dhatrak_/">
-          <img>src = "../../content/assets/insta.svg"</img>
+        <a href={`https://github.com/${social.github}`} target="_blank">
+          <Image fixed={data.github.childImageSharp.fixed} alt="github" />
         </a>
-        &nbsp;
-      </p>
+        <a href={`https://instagram.com/${social.instagram}`} target="_blank">
+          <Image fixed={data.instagram.childImageSharp.fixed} alt="instagram" />
+        </a>
+      </div>
     </div>
   )
 }

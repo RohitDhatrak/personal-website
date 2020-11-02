@@ -33,7 +33,7 @@ const Bio = () => {
           }
         }
       }
-      twitter: file(absolutePath: { regex: "/twitter.svg/" }) {
+      twitter: file(absolutePath: { regex: "/twitter.png/" }) {
         childImageSharp {
           fixed(width: 35, height: 35) {
             ...GatsbyImageSharpFixed
@@ -69,6 +69,7 @@ const Bio = () => {
   const social = data.site.siteMetadata?.social
 
   const avatar = data?.avatar?.childImageSharp?.fixed
+  const social1 = data?.avatar?.childImageSharp?.fixed
 
   return (
     <div className="bio">

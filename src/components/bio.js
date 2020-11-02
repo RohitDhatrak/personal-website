@@ -40,21 +40,21 @@ const Bio = () => {
           }
         }
       }
-      linkedin: file(absolutePath: { regex: "/linkedin.svg/" }) {
+      linkedin: file(absolutePath: { regex: "/linkedin.png/" }) {
         childImageSharp {
           fixed(width: 35, height: 35) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      github: file(absolutePath: { regex: "/github.svg/" }) {
+      github: file(absolutePath: { regex: "/github.png/" }) {
         childImageSharp {
           fixed(width: 35, height: 35) {
             ...GatsbyImageSharpFixed
           }
         }
       }
-      instagram: file(absolutePath: { regex: "/instagram.svg/" }) {
+      instagram: file(absolutePath: { regex: "/instagram.png/" }) {
         childImageSharp {
           fixed(width: 35, height: 35) {
             ...GatsbyImageSharpFixed

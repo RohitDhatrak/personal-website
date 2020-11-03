@@ -26,13 +26,12 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer>
         <form
-          name="contact-form"
-          method="post"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          action="https://getform.io/f/f4bd07d5-2fb4-4fca-8972-d672097cb300"
+          method="POST"
         >
-          <input name="email" placeholder="name@name.com" type="email" />
-          <button>Send</button>
+          <input type="text" name="name" />
+          <input type="email" name="email" />
+          <button type="submit">Send</button>
         </form>
       </footer>
     </div>

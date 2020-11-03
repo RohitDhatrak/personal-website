@@ -44,6 +44,7 @@ const Layout = ({ location, title, children }) => {
               name="email"
               className="form-input"
             />
+            <br></br>
             <button type="submit" className="form-button">
               Send
             </button>

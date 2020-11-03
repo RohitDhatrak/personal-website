@@ -99,14 +99,18 @@ footer {
 
 .form-title {
   font-family: var(--font-body);
+  font-size: var(--fontSize-2);
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 0.5em;
 }
 
-.form-item {
+.form-items {
   display: flex;
   flex-direction: column;
 }
 
-.form-item > * {
+.form-items > * {
   align-self: flex-start;
 }
 
@@ -114,12 +118,13 @@ footer {
   -webkit-appearance: none;
   width: 100%;
   max-width: 425px;
-  padding: 0.8;
+  padding: 0.5em;
   outline: none;
   border: 1px solid #dddddd;
   border-radius: 4px;
   background: #f9f9f9;
-  trasition: background 0.25s, border-color 0.25s, color 0.25s;
+  transition: background 0.25s, border-color 0.25s, color 0.25s;
+  margin-bottom: 1em;
 }
 
 .form-input::focus {
@@ -127,7 +132,7 @@ footer {
 }
 
 .form-input::placeholder {
-  colour: #bbbbbb;
+  color: #bbbbbb;
 }
 
 hr {

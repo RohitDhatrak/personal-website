@@ -365,7 +365,7 @@ a:focus {
   margin-bottom: var(--spacing-0);
   border-radius: 100%;
   flex-basis: 16%;
-  min-width: 6.5em;
+  min-width: 6.3em;
 }
 
 .bio-desc {

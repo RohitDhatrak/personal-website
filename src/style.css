@@ -114,6 +114,20 @@ footer {
   -webkit-appearance: none;
   width: 100%;
   max-width: 425px;
+  padding: 0.8;
+  outline: none;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  background: #f9f9f9;
+  trasition: background 0.25s, border-color 0.25s, color 0.25s;
+}
+
+.form-input::focus {
+  background: #ffffff;
+}
+
+.form-input::placeholder {
+  colour: #bbbbbb;
 }
 
 hr {

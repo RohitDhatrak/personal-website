@@ -3,7 +3,7 @@ module.exports = {
     title: `All Posts`,
     author: {
       name: `Rohit Dhatrak`,
-      summary: `I'm an aspiring developer following the self-taught path. I would love to share my journey and knowledge with you along the way.`,
+      summary: `I'm an aspiring developer taking the self-taught path. I would love to share my journey and knowledge with you along the way.`,
     },
     description: `A blog by Rohit Dhatrak`,
     siteUrl: `https://rohit-dhatrak.netlify.app/`,

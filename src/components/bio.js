@@ -86,26 +86,35 @@ const Bio = () => {
         <p className="bio-desc">
           Hi, I'm <strong>{author.name}</strong>. {author?.summary || null}
           {` `}
+          <div>
+            <a href={`https://twitter.com/${social.twitter}`} target="_blank">
+              <Image fixed={data.twitter.childImageSharp.fixed} alt="twitter" />
+            </a>
+            &nbsp;
+            <a href={`https://linkedin.com/${social.linkedin}`} target="_blank">
+              <Image
+                fixed={data.linkedin.childImageSharp.fixed}
+                alt="linked in"
+              />
+            </a>
+            &nbsp;
+            <a href={`https://github.com/${social.github}`} target="_blank">
+              <Image fixed={data.github.childImageSharp.fixed} alt="github" />
+            </a>
+            &nbsp;
+            <a
+              href={`https://instagram.com/${social.instagram}`}
+              target="_blank"
+            >
+              <Image
+                fixed={data.instagram.childImageSharp.fixed}
+                alt="instagram"
+              />
+            </a>
+            &nbsp;
+          </div>
         </p>
       )}
-      <div>
-        <a href={`https://twitter.com/${social.twitter}`} target="_blank">
-          <Image fixed={data.twitter.childImageSharp.fixed} alt="twitter" />
-        </a>
-        &nbsp;
-        <a href={`https://linkedin.com/${social.linkedin}`} target="_blank">
-          <Image fixed={data.linkedin.childImageSharp.fixed} alt="linked in" />
-        </a>
-        &nbsp;
-        <a href={`https://github.com/${social.github}`} target="_blank">
-          <Image fixed={data.github.childImageSharp.fixed} alt="github" />
-        </a>
-        &nbsp;
-        <a href={`https://instagram.com/${social.instagram}`} target="_blank">
-          <Image fixed={data.instagram.childImageSharp.fixed} alt="instagram" />
-        </a>
-        &nbsp;
-      </div>
     </div>
   )
 }

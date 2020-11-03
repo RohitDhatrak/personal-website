@@ -365,10 +365,12 @@ a:focus {
   margin-bottom: var(--spacing-0);
   min-width: 50px;
   border-radius: 100%;
+  flex-basis: 16%;
 }
 
 .bio-desc {
   margin-top: 0.5em;
+  flex-basis: 81%;
 }
 
 .blog-post header h1 {

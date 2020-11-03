@@ -39,12 +39,14 @@ const Layout = ({ location, title, children }) => {
               placeholder="First Name"
               name="name"
               className="form-input"
+              required
             />
             <input
               type="email"
               placeholder="name@example.com"
               name="email"
               className="form-input"
+              required
             />
             <br></br>
             <button type="submit" className="form-button">

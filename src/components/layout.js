@@ -24,11 +24,18 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      {/* <footer>
-        <a href="https://twitter.com/rohit_dhatrak_">Twitter</a>&nbsp;
-        <a href="https://www.linkedin.com/in/rohitdhatrak/">LinkedIn</a>&nbsp;
-        <a href="https://www.instagram.com/rohit_dhatrak_/">Instagram</a>&nbsp;
-      </footer> */}
+      <footer>
+        <form
+          name="contact-form"
+          method="post"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+        >
+          <input name="name" placeholder="First Name" type="text" />
+          <input name="email" placeholder="name@name.com" type="email" />
+          <button>Send</button>
+        </form>
+      </footer>
     </div>
   )
 }

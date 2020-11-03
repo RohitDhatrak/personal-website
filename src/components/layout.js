@@ -31,7 +31,6 @@ const Layout = ({ location, title, children }) => {
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-          <input name="name" placeholder="First Name" type="text" />
           <input name="email" placeholder="name@name.com" type="email" />
           <button>Send</button>
         </form>

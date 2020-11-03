@@ -87,6 +87,35 @@ footer {
   padding: var(--spacing-6) var(--spacing-0);
 }
 
+.form-parent {
+  font-family: var(--font-body);
+  font-size: var(--font-size-1);
+}
+
+.form-parent * {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+.form-title {
+  font-family: var(--font-body);
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item > * {
+  align-self: flex-start;
+}
+
+.form-input {
+  -webkit-appearance: none;
+  width: 100%;
+  max-width: 425px;
+}
+
 hr {
   background: var(--color-accent);
   height: 1px;

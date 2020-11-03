@@ -28,10 +28,26 @@ const Layout = ({ location, title, children }) => {
         <form
           action="https://getform.io/f/f4bd07d5-2fb4-4fca-8972-d672097cb300"
           method="POST"
+          className="form-parent"
         >
-          <input type="text" name="name" />
-          <input type="email" name="email" />
-          <button type="submit">Send</button>
+          <div className="form-title">Sign up to get notified via email</div>
+          <div className="form-items">
+            <input
+              type="text"
+              placeholder="First Name"
+              name="name"
+              className="form-input"
+            />
+            <input
+              type="email"
+              placeholder="name@example.com"
+              name="email"
+              className="form-input"
+            />
+            <button type="submit" className="form-button">
+              Send
+            </button>
+          </div>
         </form>
       </footer>
     </div>

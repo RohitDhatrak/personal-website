@@ -135,6 +135,22 @@ footer {
   color: #bbbbbb;
 }
 
+.form-button {
+  color: white;
+  background-color: var(--color-primary);
+  padding: 5px 12px;
+  margin: 0;
+  border: none;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  cursor: pointer;
+  outline: none;
+}
+
+.form-button::active {
+  background-color: #042d48;
+}
+
 hr {
   background: var(--color-accent);
   height: 1px;

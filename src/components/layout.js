@@ -30,7 +30,9 @@ const Layout = ({ location, title, children }) => {
           method="POST"
           className="form-parent"
         >
-          <div className="form-title">Sign up to get notified via email</div>
+          <div className="form-title">
+            Sign up to get notified about new posts
+          </div>
           <div className="form-items">
             <input
               type="text"

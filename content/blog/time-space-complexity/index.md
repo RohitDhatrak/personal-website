@@ -135,7 +135,7 @@ This can be mathematically represented by <math><mfrac><mi>n</mi><mi>n</mi></mfr
 Therefore we can write it as <math><mfrac><mi>n</mi><mi>2<sup>k</sup></mi></mfrac></math> = 1 where k is the number of times we divided by 2.\
 ∴ n = 2<sup>k</sup>
 
-Because k is the number of times we divided by therefore k will give us the number of iterations it took to get the number in the worst possible case.\
+Because k is the number of times we divided by 2, k will give us the number of iterations it took to get the number in the worst possible case.\
 The equation n = 2<sup>k</sup> can be written as k = log2(n).
 
 Therefore as input increases, the time taken by the algorithm increases logarithmically.

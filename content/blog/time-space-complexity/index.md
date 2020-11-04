@@ -1,7 +1,7 @@
 ---
 title: Time and Space Complexity
 date: "2020-11-04T22:12:03.284Z"
-description: "Time Complexity is a method used to determine how our algorithm scales that is will our algorithm be able to run in the required amount of time. We don't measure the time in seconds as it depends"
+description: "Time Complexity is used to determine if our algorithm will be able to run in the required amount of time. We don't measure the time in seconds as it depends on various factors like..."
 ---
 
 #####What is time complexity?
@@ -32,8 +32,8 @@ We get rid of all the constant multiples and the lower order terms because they 
 
 ```
 int average(int a, int b) {
-    int avg = (a+b)/2;          // occurs once
-    return avg;                // occurs once
+    int avg = (a+b)/2;      // occurs once
+    return avg;             // occurs once
 }
 ```
 
@@ -45,12 +45,12 @@ Therefore as the input increases, the time taken by the algorithm stays the same
 
 ```
 int find(int arr[], int key) {
-    int n = sizeof(arr);             // 1
-    for(int i = 0; i < n; i++) {    // n
-        if(arr[i] == key)           // 1
-            return i;               // 1
+    int n = sizeof(arr);         // 1
+    for(int i = 0; i < n; i++) { // n
+        if(arr[i] == key)        // 1
+            return i;            // 1
     }
-    return -1;                     // 1
+    return -1;                   // 1
 }
 ```
 
@@ -68,15 +68,15 @@ Therefore as input increases, the time taken by the algorithm increases linearly
 
 ```
 int findDuplicates(int array[]) {
-    int n = sizeof(array);                              // 1
-    for (int i = 0; i < n; i++){                       // n
-        for (int j = 0; j < n; j++){                   // n
-            if (i !==j && array[i] == array[j]){       // 1
-                return i;                             // 1
+    int n = sizeof(array);                        // 1
+    for (int i = 0; i < n; i++){                  // n
+        for (int j = 0; j < n; j++){              // n
+            if (i !==j && array[i] == array[j]){  // 1
+                return i;                         // 1
             }
         }
     }
-    return -1;                                         // 1
+    return -1;                                    // 1
 }
 ```
 
@@ -96,6 +96,10 @@ log<sub> 2</sub> 8 = 3\
 You can think of it as how many 2's do we multiply together to get 8. The answer is 3.
 
 We take log to the base two and not ten because a computer operates in binary number system as opposed to the decimal number system that we use.
+
+Now we'll take a look at binary search. The way this algorithm operates is similar to how we might search for a word in a dictionary. Let's say we open the dictionary somewhere in the middle. If the word we are looking for lies in the left half we ignore the right half and then again split the left half in two.
+
+If we keep on doing this process we'll eventually find the word we are looking for because the words in a dictionary are arranged in alphabetical order. Similarly, if we have an sorted array and we want to look for a value x we can apply binary search.
 
 ```
 int binarySearch(int arr[], int x) {
@@ -128,7 +132,7 @@ int binarySearch(int arr[], int x) {
 }
 ```
 
-In this example, the amount of data we have to work with is reduced by half with each iteration. Therefore in the worst case, we'll find the element in the last iteration that is we kept on dividing until only one element was left.
+In this algorithm, the amount of data we have to work with is reduced by half with each iteration. Therefore in the worst case, we'll find the element in the last iteration i.e we kept on dividing until only one element was left.
 
 This can be mathematically represented by <math><mfrac><mi>n</mi><mi>n</mi></mfrac></math> = 1. The denominator can be represented by a power of 2 as we divided by 2 with every iteration.
 

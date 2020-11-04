@@ -87,24 +87,37 @@ const Bio = () => {
           Hi, I'm <strong>{author.name}</strong>. {author?.summary || null}
           {` `}
           <div>
-            <a href={`https://twitter.com/${social.twitter}`} target="_blank">
+            <a
+              href={`https://twitter.com/${social.twitter}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image fixed={data.twitter.childImageSharp.fixed} alt="twitter" />
             </a>
             &nbsp;
-            <a href={`https://linkedin.com/${social.linkedin}`} target="_blank">
+            <a
+              href={`https://linkedin.com/${social.linkedin}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image
                 fixed={data.linkedin.childImageSharp.fixed}
                 alt="linked in"
               />
             </a>
             &nbsp;
-            <a href={`https://github.com/${social.github}`} target="_blank">
+            <a
+              href={`https://github.com/${social.github}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image fixed={data.github.childImageSharp.fixed} alt="github" />
             </a>
             &nbsp;
             <a
               href={`https://instagram.com/${social.instagram}`}
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Image
                 fixed={data.instagram.childImageSharp.fixed}

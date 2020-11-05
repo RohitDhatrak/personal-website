@@ -22,7 +22,7 @@ i\) Break your algorithm into individual operations.\
 ii\) Calculate the no of times each operation repeats.\
 iii\) Add everything together.\
 iv\) Remove the constants multiples.\
-v\) Drop the lowere order terms.
+v\) Drop the lower order terms.
 
 We get rid of all the constant multiples and the lower order terms because they don't contribute much for large values of input. We'll see the steps in the examples below.
 
@@ -97,8 +97,6 @@ Log is written as log<sub> x</sub> y
 
 log<sub> 2</sub> 8 = 3\
 You can think of it as how many 2's do we multiply together to get 8. The answer is 3.
-
-We take log to the base two and not ten because a computer operates in binary number system as opposed to the decimal number system that we use.
 
 Now we'll take a look at binary search. The way this algorithm operates is similar to how we might search for a word in a dictionary. Let's say we open the dictionary somewhere in the middle. If the word we are looking for lies in the left half we ignore the right half and then again split the left half in two.
 

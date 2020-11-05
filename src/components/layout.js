@@ -26,7 +26,7 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer>
         <form
-          action="https://getform.io/f/f4bd07d5-2fb4-4fca-8972-d672097cb300"
+          action={`${process.env.GATSBY_FORM_API_URL}`}
           method="POST"
           className="form-parent"
         >
@@ -34,20 +34,26 @@ const Layout = ({ location, title, children }) => {
             Sign up to get notified about new posts
           </div>
           <div className="form-items">
-            <input
-              type="text"
-              placeholder="First Name"
-              name="name"
-              className="form-input"
-              required
-            />
-            <input
-              type="email"
-              placeholder="name@example.com"
-              name="email"
-              className="form-input"
-              required
-            />
+            <label>
+              Enter your first name
+              <input
+                type="text"
+                placeholder="First Name"
+                name="name"
+                className="form-input"
+                required
+              />
+            </label>
+            <label>
+              Enter your email
+              <input
+                type="email"
+                placeholder="name@example.com"
+                name="email"
+                className="form-input"
+                required
+              />
+            </label>
             <br></br>
             <button type="submit" className="form-button">
               Send

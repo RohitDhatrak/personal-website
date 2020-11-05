@@ -83,9 +83,9 @@ body {
   color: var(--color-text);
 }
 
-footer {
-  /* padding: var(--spacing-6) var(--spacing-0); */
-}
+/* footer {
+  padding: var(--spacing-6) var(--spacing-0); 
+} */
 
 .form-parent {
   font-family: var(--font-body);
@@ -116,7 +116,7 @@ footer {
 
 .form-input {
   -webkit-appearance: none;
-  width: 100%;
+  width: 100% !important;
   max-width: 425px;
   padding: 0.5em;
   outline: none;
@@ -401,4 +401,9 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+label {
+  font-weight: bolder;
+  padding: 3px;
 }

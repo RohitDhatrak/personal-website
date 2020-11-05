@@ -166,11 +166,11 @@ for (int i = n; i > 0; i /= c) {
 
 Here we can see the different time complexities we discussed above and how they compare to each other. O(1) is the fastest and O(n<sup>2</sup>) is the slowest.
 
-There are other time complexities as well like O(nlog n), O(c<sup>n</sup>), O(n!) which we'll cover in the future posts. Untill then you can sign up to get notified about new posts.
+There are other time complexities as well like O(nlog n), O(c<sup>n</sup>), O(n!) which we'll cover in the future posts.
 
 An interesting thing to note is that O(log n) is slower than O(n) for smaller values. Similarly O(n<sup>2</sup>) is faster than O(n) for smaller values of n. But we don't really care about small values we check for the behaviour of the algorithm when the input is large.
 
-#####What is Space Complexity?f
+#####What is Space Complexity?
 It is same as time complexity but instead of looking at how much more time our algorithm takes as the input grows we look at how much more space does our algorithm consume when we the input grows.
 
 We often optimize for time over space because usually space is not an issue but we want our algorithms to be faster.

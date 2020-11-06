@@ -35,28 +35,28 @@ const Bio = () => {
       }
       twitter: file(absolutePath: { regex: "/twitter.png/" }) {
         childImageSharp {
-          fixed(width: 32, height: 32) {
+          fixed(width: 20, height: 20) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       linkedin: file(absolutePath: { regex: "/linkedin.png/" }) {
         childImageSharp {
-          fixed(width: 32, height: 32) {
+          fixed(width: 20, height: 20) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       github: file(absolutePath: { regex: "/github.png/" }) {
         childImageSharp {
-          fixed(width: 32, height: 32) {
+          fixed(width: 20, height: 20) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       instagram: file(absolutePath: { regex: "/instagram.png/" }) {
         childImageSharp {
-          fixed(width: 32, height: 32) {
+          fixed(width: 20, height: 20) {
             ...GatsbyImageSharpFixed
           }
         }

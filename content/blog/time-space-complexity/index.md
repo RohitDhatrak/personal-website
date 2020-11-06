@@ -135,7 +135,7 @@ int binarySearch(int arr[], int x) {
 }
 ```
 
-In this algorithm, the amount of data to work on can be reduced by half with each iteration.
+In this algorithm, the amount of data we have to work with is reduced by half with each iteration.
 
 <math><mfrac><mi>n</mi><mi>2</mi></mfrac></math>, <math><mfrac><mi>n</mi><mi>4</mi></mfrac></math>, <math><mfrac><mi>n</mi><mi>8</mi></mfrac></math> ...
 
@@ -171,7 +171,7 @@ There are other time complexities as well like O(nlog n), O(c<sup>n</sup>), O(n!
 An interesting thing to note is that O(log n) is slower than O(n) for smaller values. Similarly O(n<sup>2</sup>) is faster than O(n) for smaller values of n. But we don't really care about small values we check for the behaviour of the algorithm when the input is large.
 
 #####What is Space Complexity?
-It is the same as time complexity but instead of looking at how much more time our algorithm takes as the input increases. Then we look at how much more space does our algorithm consumes when the input grows.
+It is same as time complexity but instead of looking at how much more time our algorithm takes as the input grows we look at how much more space does our algorithm consume when we the input grows.
 
 We often optimize for time over space because usually space is not an issue but we want our algorithms to be faster.
 

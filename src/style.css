@@ -116,7 +116,7 @@ body {
 
 .form-input {
   -webkit-appearance: none;
-  width: 100% !important;
+  width: 100%;
   max-width: 425px;
   padding: 0.5em;
   outline: none;
@@ -403,7 +403,4 @@ a:focus {
   }
 }
 
-label {
-  font-weight: bolder;
-  padding: 3px;
-}
+

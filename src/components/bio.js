@@ -12,7 +12,7 @@ import Image from "gatsby-image"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpeg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
         childImageSharp {
           fixed(width: 100, height: 100, quality: 95) {
             ...GatsbyImageSharpFixed
@@ -35,28 +35,28 @@ const Bio = () => {
       }
       twitter: file(absolutePath: { regex: "/twitter.png/" }) {
         childImageSharp {
-          fixed(width: 20, height: 20) {
+          fixed(width: 25, height: 25) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       linkedin: file(absolutePath: { regex: "/linkedin.png/" }) {
         childImageSharp {
-          fixed(width: 20, height: 20) {
+          fixed(width: 25, height: 25) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       github: file(absolutePath: { regex: "/github.png/" }) {
         childImageSharp {
-          fixed(width: 20, height: 20) {
+          fixed(width: 25, height: 25) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       instagram: file(absolutePath: { regex: "/instagram.png/" }) {
         childImageSharp {
-          fixed(width: 20, height: 20) {
+          fixed(width: 25, height: 25) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -86,7 +86,7 @@ const Bio = () => {
         <p className="bio-desc">
           Hi, I'm <strong>{author.name}</strong>. {author?.summary || null}
           {` `}
-          <div>
+          <div className="bio-links">
             <a
               href={`https://twitter.com/${social.twitter}`}
               target="_blank"
@@ -94,7 +94,7 @@ const Bio = () => {
             >
               <Image fixed={data.twitter.childImageSharp.fixed} alt="twitter" />
             </a>
-            &nbsp;
+            &nbsp;&nbsp;
             <a
               href={`https://linkedin.com/${social.linkedin}`}
               target="_blank"
@@ -105,7 +105,7 @@ const Bio = () => {
                 alt="linked in"
               />
             </a>
-            &nbsp;
+            &nbsp;&nbsp;
             <a
               href={`https://github.com/${social.github}`}
               target="_blank"
@@ -113,7 +113,7 @@ const Bio = () => {
             >
               <Image fixed={data.github.childImageSharp.fixed} alt="github" />
             </a>
-            &nbsp;
+            &nbsp;&nbsp;
             <a
               href={`https://instagram.com/${social.instagram}`}
               target="_blank"
@@ -124,7 +124,7 @@ const Bio = () => {
                 alt="instagram"
               />
             </a>
-            &nbsp;
+            &nbsp;&nbsp;
           </div>
         </p>
       )}

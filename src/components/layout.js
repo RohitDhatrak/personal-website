@@ -26,32 +26,28 @@ const Layout = ({ location, title, children }) => {
       <main>{children}</main>
       <footer>
         <form
-          action="https://getform.io/f/f4bd07d5-2fb4-4fca-8972-d672097cb300"
-          method="POST"
           className="form-parent"
+          action="https://tinyletter.com/rohitdhatrak"
+          method="POST"
+          target="popupwindow"
+          onsubmit="window.open('https://tinyletter.com/rohitdhatrak', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
         >
           <div className="form-title">
             Sign up to get notified about new posts
           </div>
           <div className="form-items">
-            <input
-              type="text"
-              placeholder="First Name"
-              name="name"
-              className="form-input"
-              required
-            />
-            <input
-              type="email"
-              placeholder="name@example.com"
-              name="email"
-              className="form-input"
-              required
-            />
-            <br></br>
-            <button type="submit" className="form-button">
-              Send
-            </button>
+            <label className="form-label">
+              Enter your email address
+              <input
+                type="email"
+                placeholder="name@example.com"
+                name="email"
+                className="form-input"
+                required
+              />
+            </label>
+            <input type="hidden" value="1" name="embed" />
+            <input className="form-button" type="submit" value="Subscribe" />
           </div>
         </form>
       </footer>

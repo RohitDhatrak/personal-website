@@ -83,8 +83,13 @@ body {
   color: var(--color-text);
 }
 
-footer {
-  /* padding: var(--spacing-6) var(--spacing-0); */
+/* footer {
+  padding: var(--spacing-6) var(--spacing-0);
+} */
+
+.form-label {
+  font-family: var(--font-body);
+  /* margin-bottom: 0.5em; */
 }
 
 .form-parent {
@@ -371,6 +376,10 @@ a:focus {
 .bio-desc {
   margin-top: 0.5em;
   flex-basis: 81%;
+}
+
+.bio-links {
+  margin-top: 0.3em;
 }
 
 .blog-post header h1 {

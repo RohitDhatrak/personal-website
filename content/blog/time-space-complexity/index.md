@@ -5,16 +5,14 @@ description: "Time Complexity is used to determine if our algorithm will be able
 ---
 
 #####What is time complexity?
-Time Complexity is used to determine if our algorithm will be able to run in the required amount of time. We don't measure the time in seconds as it depends on various factors which we don't want to take into consideration. We are interested in the behaviour of an algorithm for a large number of inputs.
+Time Complexity could be used to determine if our algorithm will be able to run in the required amount of time by looking at how the runtime grows according to the input. We don't measure the runtime in seconds as it depends on various factors which we don't want to take into consideration. We are interested in the behaviour of an algorithm for a large number of inputs.
 
 #####How do we measure time complexity?
-When we want to measure the time complexity we can do so in three ways. We can measure the worst possible time an algorithm takes, the best possible time it takes and the average time it takes.
+Big-O notation gives the upper bound of the time complexity of an algorithm.
 
-Big-O notation represents the worst possible time an algorithm takes and it's written as O().\
-Ω-notation gives the best possible time an algorithm takes and it's written as Ω().\
-Θ-notation gives the average time taken by an algorithm and it's written as Θ().
+Let's say we have a function T(n) which gives the runtime of an algorithm where n is the number of inputs. If we can find a function f(n) which when multiplied by c is greater than T(n) then we can say that f(n) upper bounds T(n).
 
-These three are known as the asymptotic notations. Out of these notations, we'll be using the Big-O notion as we are interested in the worst-case scenario.
+This can be mathematically represented as T(n) <= f(n). And we write it as O(f(n)).
 
 #####How To Calculate Big O
 
@@ -100,7 +98,7 @@ You can think of it as how many 2's do we multiply together to get 8. The answer
 
 Now we'll take a look at binary search. The way this algorithm operates is similar to how we might search for a word in a dictionary. Let's say we open the dictionary somewhere in the middle. If the word we are looking for lies in the left half we ignore the right half and then again split the left half in two.
 
-If we keep on doing this process we'll eventually find the word we are looking for because the words in a dictionary are arranged in alphabetical order. Similarly, if we have an sorted array and we want to look for a value x we can apply binary search.
+If we keep on doing this process we'll eventually find the word we are looking for because the words in a dictionary are arranged in alphabetical order. Similarly, if we have a sorted array and we want to look for a value x we can apply binary search.
 
 ```
 int binarySearch(int arr[], int x) {
@@ -166,11 +164,11 @@ Here we can see the different time complexities we discussed above and how they 
 
 There are other time complexities as well like O(nlog n), O(c<sup>n</sup>), O(n!) which we'll cover in the future posts.
 
-An interesting thing to note is that O(log n) is slower than O(n) for smaller values. Similarly O(n<sup>2</sup>) is faster than O(n) for smaller values of n. But we don't really care about small values we check for the behaviour of the algorithm when the input is large.
+An interesting thing to note is that O(log n) is slower than O(n) for smaller values. But we don't really care about small values we check for the behaviour of the algorithm when the input is large.
 
 #####What is Space Complexity?
 It is same as time complexity but instead of looking at how much more time our algorithm takes as the input grows we look at how much more space does our algorithm consume when we the input grows.
 
-We often optimize for time over space because usually space is not an issue but we want our algorithms to be faster.
+We often optimize for time over space because usually space is not an issue but we want our algorithms to be faster. However, in scenarios like working with embedded systems where we have a memory constrain, space complexity becomes equally important.
 
 If you liked the post or have any questions/suggestions feel free to reach out on any of the social media platforms.

@@ -133,7 +133,7 @@ int binarySearch(int arr[], int x) {
 
 In this algorithm, the amount of data we have to work with is reduced by half with each iteration.
 
-<math><mfrac><mi>n</mi><mi>2</mi></mfrac></math>, <math><mfrac><mi>n</mi><mi>4</mi></mfrac></math>, <math><mfrac><mi>n</mi><mi>8</mi></mfrac></math> ...
+n/2, n/4, n/8...
 
 Therefore in the worst case, we'll find the element in the last iteration i.e we kept on dividing until only one element was left.
 

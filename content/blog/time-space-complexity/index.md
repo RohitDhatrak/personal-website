@@ -12,7 +12,7 @@ Big-O notation gives the upper bound of the time complexity of an algorithm.
 
 Let's say we have a function T(n) which gives the runtime of an algorithm where n is the number of inputs. If we can find a function f(n) which when multiplied by c is greater than T(n) then we can say that f(n) upper bounds T(n).
 
-This can be mathematically represented as T(n) <= f(n). And we write it as O(f(n)).
+This can be mathematically represented as T(n) <= c * f(n). And we write it as O(f(n)).
 
 #####How To Calculate Big O
 

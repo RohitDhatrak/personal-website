@@ -1,7 +1,7 @@
 ---
 title: Time and Space Complexity
 date: "2020-11-05T22:12:03.284Z"
-description: "Time Complexity is used to determine if our algorithm will be able to run in the required amount of time. We don't measure the time in seconds as it depends on various factors like..."
+description: "What is Time and Space Complexity? What do we mean when we say an algorithm takes log(n) time?"
 ---
 
 #####What is time complexity?
@@ -12,7 +12,7 @@ Big-O notation gives the upper bound of the time complexity of an algorithm.
 
 Let's say we have a function T(n) which gives the runtime of an algorithm where n is the number of inputs. If we can find a function f(n) which when multiplied by c is greater than T(n) then we can say that f(n) upper bounds T(n).
 
-This can be mathematically represented as T(n) <= c * f(n). And we write it as O(f(n)).
+This can be mathematically represented as T(n) <= c \* f(n). And we write it as O(f(n)).
 
 #####How To Calculate Big O
 

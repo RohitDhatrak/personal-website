@@ -94,7 +94,7 @@ body {
 .form-parent {
   font-family: var(--font-body);
   font-size: var(--font-size-1);
-  margin-top: 3em;
+  margin-top: 2em;
 }
 
 .form-parent * {

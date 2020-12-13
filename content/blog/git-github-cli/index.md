@@ -1,6 +1,6 @@
 ---
 title: Supercharge your workflow with Git and GitHub CLI
-date: "2020-12-12T22:12:03.284Z"
+date: "2020-12-13T22:12:03.284Z"
 description: "A thorough guide to improving your workflow through basic Git and Github CLI commands"
 ---
 
@@ -79,3 +79,15 @@ You can merge a PR using the `gh pr merge` command.
 You can see all the PR's concerning you using the `gh pr status` command. This command will show all the PR's on the branch you are working on, all the PR's made by you and all the PR's requesting a review from you.
 
 `gh pr list` will list all the PR's in the repo.
+
+#####How to make changes in the last commit
+
+If you committed your changes and then realized that you need to make one more small change then you can make your changes add them to the staging index and then use the command `git commit --amend --no-edit`.
+
+Your last commit will now contain that change.
+
+**Warning:** You should never amend commits that have been pushed up to a public/shared branch! Only amend commits that only exist in your local copy or you're gonna have a bad time.
+
+If you want to know more of these life-saving commands you should check out [Oh Shit, Git!?!](https://ohshitgit.com/)
+
+You can check out the other Github commands [here](https://cli.github.com/manual/) and the Git commands [here](https://git-scm.com/docs)

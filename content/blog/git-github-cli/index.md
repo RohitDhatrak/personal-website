@@ -26,7 +26,7 @@ This will add all the files in the workspace to the staging index. You can also 
 
 If you need to add all the files except a few files then you can add the files that you want to ignore to the [.gitignore](https://www.javatpoint.com/git-ignore) file and add the rest of the files using the `git add .` command.
 
-#####Commiting the files
+#####Committing the files
 
 When you commit a file you are essentially saving the file at the current state and this state will always be accessible in the future just in case something goes wrong.
 

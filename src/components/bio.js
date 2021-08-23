@@ -96,7 +96,7 @@ const Bio = () => {
             </a>
             &nbsp;&nbsp;
             <a
-              href={`https://linkedin.com/${social.linkedin}`}
+              href={`https://linkedin.com/in/${social.linkedin}`}
               target="_blank"
               rel="noopener noreferrer"
             >

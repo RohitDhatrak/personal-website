@@ -83,80 +83,6 @@ body {
   color: var(--color-text);
 }
 
-/* footer {
-  padding: var(--spacing-6) var(--spacing-0);
-} */
-
-.form-label {
-  font-family: var(--font-body);
-}
-
-.form-parent {
-  font-family: var(--font-body);
-  font-size: var(--font-size-1);
-  margin-top: 2em;
-}
-
-.form-parent * {
-  box-sizing: border-box;
-  line-height: 1.5;
-}
-
-.form-title {
-  font-family: var(--font-body);
-  font-size: var(--fontSize-3);
-  color: var(--color-primary);
-  font-weight: 700;
-  margin-bottom: 1em;
-}
-
-.form-items {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-items > * {
-  align-self: flex-start;
-}
-
-.form-input {
-  -webkit-appearance: none;
-  width: 100%;
-  max-width: 425px;
-  padding: 0.5em;
-  outline: none;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  background: #f9f9f9;
-  transition: background 0.25s, border-color 0.25s, color 0.25s;
-  margin-bottom: 1em;
-  margin-top: 0.5em;
-}
-
-.form-input::focus {
-  background: #ffffff;
-}
-
-.form-input::placeholder {
-  color: #6e767e;
-}
-
-.form-button {
-  color: white;
-  background-color: var(--color-primary);
-  padding: 5px 12px;
-  margin: 0;
-  border: none;
-  border-radius: 6px;
-  font-family: var(--font-body);
-  cursor: pointer;
-  outline: none;
-}
-
-.form-button::active {
-  background-color: #042d48;
-}
-
 hr {
   background: var(--color-accent);
   height: 1px;
@@ -356,33 +282,6 @@ a:focus {
   font-size: var(--fontSize-2);
 }
 
-.bio {
-  display: flex;
-  flex-wrap: wrap;
-  /* margin-bottom: var(--spacing-16); */
-}
-
-.bio p {
-  margin-bottom: var(--spacing-0);
-}
-
-.bio-avatar {
-  margin-right: var(--spacing-4);
-  margin-bottom: var(--spacing-0);
-  border-radius: 100%;
-  flex-basis: 16%;
-  min-width: 6.3em;
-}
-
-.bio-desc {
-  margin-top: 0.5em;
-  flex-basis: 81%;
-}
-
-.bio-links {
-  margin-top: 0.3em;
-}
-
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
@@ -411,4 +310,8 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+.substack-watermark {
+  display: none;
 }

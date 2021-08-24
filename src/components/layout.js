@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import layout from "./layout.module.css"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -24,32 +25,15 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer>
-        <form
-          className="form-parent"
-          action="https://tinyletter.com/rohitdhatrak"
-          method="POST"
-          target="popupwindow"
-          onsubmit="window.open('https://tinyletter.com/rohitdhatrak', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-        >
-          <div className="form-title">
-            Sign up to get notified about new posts
-          </div>
-          <div className="form-items">
-            <label className="form-label">
-              Enter your email address
-              <input
-                type="email"
-                placeholder="name@example.com"
-                name="email"
-                className="form-input"
-                required
-              />
-            </label>
-            <input type="hidden" value="1" name="embed" />
-            <input className="form-button" type="submit" value="Subscribe" />
-          </div>
-        </form>
+      <footer className={layout.substack}>
+        <iframe
+          title="Subscribe to get notified about new posts"
+          src="https://rohitdhatrak.substack.com/embed"
+          width="480"
+          height="320"
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
       </footer>
     </div>
   )

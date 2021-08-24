@@ -3,7 +3,7 @@ module.exports = {
     title: `All Posts`,
     author: {
       name: `Rohit Dhatrak`,
-      summary: `I'm an aspiring developer taking the self-taught path. I would love to share my journey and knowledge with you along the way.`,
+      summary: `I write about my learning from Web Development, DS & Algorithms in a simplified and accessible manner. You'll also find notes from the books that I have read.`,
     },
     description: `A blog by Rohit Dhatrak`,
     siteUrl: `https://rohit-dhatrak.netlify.app/`,
@@ -69,14 +69,12 @@ module.exports = {
         short_name: `RD`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#005b99`,
         display: `minimal-ui`,
         icon: `content/assets/logo.png`,
       },
     },
     `gatsby-plugin-react-helmet`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
 }

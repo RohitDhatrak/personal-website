@@ -8,6 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import bio from "./bio.module.css"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -71,63 +72,59 @@ const Bio = () => {
   const avatar = data?.avatar?.childImageSharp?.fixed
 
   return (
-    <div className="bio">
-      {avatar && (
-        <Image
-          fixed={avatar}
-          alt={author?.name || ``}
-          className="bio-avatar"
-          imgStyle={{
-            borderRadius: `50%`,
-          }}
-        />
-      )}
-      {author?.name && (
-        <p className="bio-desc">
-          Hi, I'm <strong>{author.name}</strong>. {author?.summary || null}
-          {` `}
-          <div className="bio-links">
-            <a
-              href={`https://twitter.com/${social.twitter}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image fixed={data.twitter.childImageSharp.fixed} alt="twitter" />
-            </a>
-            &nbsp;&nbsp;
-            <a
-              href={`https://linkedin.com/in/${social.linkedin}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                fixed={data.linkedin.childImageSharp.fixed}
-                alt="linked in"
-              />
-            </a>
-            &nbsp;&nbsp;
-            <a
-              href={`https://github.com/${social.github}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image fixed={data.github.childImageSharp.fixed} alt="github" />
-            </a>
-            &nbsp;&nbsp;
-            <a
-              href={`https://instagram.com/${social.instagram}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                fixed={data.instagram.childImageSharp.fixed}
-                alt="instagram"
-              />
-            </a>
-            &nbsp;&nbsp;
-          </div>
-        </p>
-      )}
+    <div className={bio.container}>
+      <Image
+        fixed={avatar}
+        alt={author?.name || ``}
+        className={bio.avatar}
+        imgStyle={{
+          borderRadius: `50%`,
+        }}
+      />
+      <p className={bio.description}>
+        Hi, I'm <strong>Rohit</strong>. {author?.summary || null}
+        {` `}
+        <div className={bio.socials}>
+          <a
+            href={`https://twitter.com/${social.twitter}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={bio.links}
+          >
+            <Image fixed={data.twitter.childImageSharp.fixed} alt="twitter" />
+          </a>
+          <a
+            href={`https://linkedin.com/in/${social.linkedin}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={bio.links}
+          >
+            <Image
+              fixed={data.linkedin.childImageSharp.fixed}
+              alt="linked in"
+            />
+          </a>
+          <a
+            href={`https://github.com/${social.github}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={bio.links}
+          >
+            <Image fixed={data.github.childImageSharp.fixed} alt="github" />
+          </a>
+          <a
+            href={`https://instagram.com/${social.instagram}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={bio.links}
+          >
+            <Image
+              fixed={data.instagram.childImageSharp.fixed}
+              alt="instagram"
+            />
+          </a>
+        </div>
+      </p>
     </div>
   )
 }

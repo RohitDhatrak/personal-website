@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.avatar {
+  margin-right: var(--spacing-4);
+  margin-bottom: var(--spacing-0);
+  border-radius: 100%;
+  flex-basis: 16%;
+  min-width: 6.3em;
+}
+
+.description {
+  margin-top: 0.5em;
+  flex-basis: 81%;
+  margin-bottom: var(--spacing-0);
+}
+
+.socials {
+  margin-top: 0.3em;
+}
+
+.links {
+  margin-right: 0.8em;
+}

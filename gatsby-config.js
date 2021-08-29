@@ -3,9 +3,9 @@ module.exports = {
     title: `All Posts`,
     author: {
       name: `Rohit Dhatrak`,
-      summary: `I write about my learning from Web Development, DS & Algorithms in a simplified and accessible manner. You'll also find notes from the books that I have read.`,
+      summary: `I write about my learning from Web Development, DS & Algorithms in a simplified and accessible manner. I also write about books that I have read.`,
     },
-    description: `Here I write about my learning from Web Development, DS & Algorithms in a simplified and accessible manner. You'll also find notes from the books that I have read.`,
+    description: `Here I write about my learning from Web Development, DS & Algorithms in a simplified and accessible manner. I also write about books that I have read.`,
     siteUrl: `https://rohitdhatrak.com`,
     social: {
       twitter: `rohit_dhatrak_`,

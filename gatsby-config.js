@@ -13,6 +13,7 @@ module.exports = {
       github: `RohitDhatrak`,
       instagram: `rohit_dhatrak_`,
     },
+    image: "/profile-pic.jpg",
     keywords: [
       "rohit",
       "dhatrak",

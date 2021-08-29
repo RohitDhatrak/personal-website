@@ -53,7 +53,6 @@ const SEO = ({
         lang,
       }}
       title={title}
-      titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       link={
         canonical
           ? [

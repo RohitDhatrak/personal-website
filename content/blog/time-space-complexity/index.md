@@ -2,6 +2,7 @@
 title: Time and Space Complexity
 date: "2020-11-05T22:12:03.284Z"
 description: "What is Time and Space Complexity? What do we mean when we say an algorithm takes log(n) time?"
+image: time-complexity.png
 ---
 
 #####What is time complexity?

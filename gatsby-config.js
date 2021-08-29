@@ -6,13 +6,24 @@ module.exports = {
       summary: `I write about my learning from Web Development, DS & Algorithms in a simplified and accessible manner. You'll also find notes from the books that I have read.`,
     },
     description: `A blog by Rohit Dhatrak`,
-    siteUrl: `https://rohit-dhatrak.netlify.app/`,
+    siteUrl: `https://rohitdhatrak.com`,
     social: {
       twitter: `rohit_dhatrak_`,
       linkedin: `rohitdhatrak`,
       github: `RohitDhatrak`,
       instagram: `rohit_dhatrak_`,
     },
+    keywords: [
+      "rohit",
+      "dhatrak",
+      "blog",
+      "coding",
+      "books",
+      "frontend",
+      "backend",
+      "javascript",
+      "react",
+    ],
   },
   plugins: [
     {

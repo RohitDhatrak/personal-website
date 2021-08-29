@@ -5,7 +5,7 @@ module.exports = {
       name: `Rohit Dhatrak`,
       summary: `I write about my learning from Web Development, DS & Algorithms in a simplified and accessible manner. You'll also find notes from the books that I have read.`,
     },
-    description: `A blog by Rohit Dhatrak`,
+    description: `Here I write about my learning from Web Development, DS & Algorithms in a simplified and accessible manner. You'll also find notes from the books that I have read.`,
     siteUrl: `https://rohitdhatrak.com`,
     social: {
       twitter: `rohit_dhatrak_`,

@@ -40,7 +40,6 @@ const SEO = ({
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
   const image =
     metaImage && metaImage.src
       ? `${site.siteMetadata.siteUrl}${metaImage.src}`

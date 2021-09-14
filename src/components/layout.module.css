@@ -1,5 +1,74 @@
-.substack {
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+.revue-embed-title {
   display: flex;
   justify-content: center;
-  align-items: center;
+  font-size: 2rem;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: #005b99;
+  font-weight: 700;
+}
+
+.revue-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 25em;
+  margin: 0 auto;
+}
+
+.revue-form-group {
+  margin: 0.5em auto;
+  width: 100%;
+}
+
+.revue-form-label {
+  display: block;
+}
+
+.revue-form-field,
+.revue-form-field-name {
+  height: 2em;
+  border: 1px solid #005b99;
+  border-radius: 0.2em;
+  padding: 0.5em 0.5em;
+}
+
+.revue-form-field::placeholder,
+.revue-form-field-name::placeholder {
+  color: #9c9c9c;
+}
+
+.revue-form-field {
+  width: 100%;
+}
+
+.revue-form-field-name {
+  width: 49.7%;
+  margin-right: 1px;
+}
+
+.revue-form-option {
+  color: #ca0505;
+  font-size: 0.8rem;
+}
+
+.revue-form-actions {
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.revue-form-submit {
+  width: 10em;
+  height: 3em;
+  border: none;
+  border-radius: 0.5em;
+  background-color: #005b99;
+  color: #fff;
+  cursor: pointer;
 }

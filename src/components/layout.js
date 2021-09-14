@@ -25,15 +25,62 @@ const Layout = ({ location, title, children }) => {
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
       <main>{children}</main>
-      <footer className={layout.substack}>
-        <iframe
-          title="Subscribe to get notified about new posts"
-          src="https://rohitdhatrak.substack.com/embed"
-          width="480"
-          height="320"
-          frameborder="0"
-          scrolling="no"
-        ></iframe>
+      <footer className={layout.footer}>
+        <div className={layout.revueEmbed}>
+          <div className={layout.revueEmbedTitle}>
+            If you found this informative you can subscribe here
+          </div>
+          <form
+            action="https://www.getrevue.co/profile/rohitdhatrak/add_subscriber"
+            method="post"
+            id="revue-form"
+            className={layout.revueForm}
+            name="revue-form"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className={layout.revueFormGroup}>
+              <label className={layout.revueFormLabel} for="member_email">
+                Email address <span className={layout.revueFormOption}>*</span>
+              </label>
+              <input
+                className={layout.revueFormField}
+                placeholder="Your email address"
+                type="email"
+                name="member[email]"
+                id="member_email"
+              />
+            </div>
+            <div className={layout.revueFormGroup}>
+              <label className={layout.revueFormLabel} for="member_first_name">
+                Name
+              </label>
+              <input
+                className={layout.revueFormFieldName}
+                placeholder="First"
+                type="text"
+                name="member[first_name]"
+                id="member_first_name"
+              />
+              <input
+                className={layout.revueFormFieldName}
+                placeholder="Last"
+                type="text"
+                name="member[last_name]"
+                id="member_last_name"
+              />
+            </div>
+            <div className={layout.revueFormActions}>
+              <input
+                type="submit"
+                value="Subscribe"
+                name="member[subscribe]"
+                id="member_submit"
+                className={layout.revueFormSubmit}
+              />
+            </div>
+          </form>
+        </div>
       </footer>
     </div>
   )

@@ -61,13 +61,13 @@ if (something) {
 If we run this in an older version of a browser where `let` is not defined we'll run into issues. So babel will transpile it to an **equivalent** older syntax.
 
 ```jsx
-var x$0, x$1
+var x0, x1
 if (something) {
-  x$0 = 3
-  console.log(x$0)
+  x0 = 3
+  console.log(x0)
 } else {
-  x$1 = 4
-  console.log(x$1)
+  x1 = 4
+  console.log(x1)
 }
 ```
 

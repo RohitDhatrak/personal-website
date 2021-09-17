@@ -28,7 +28,7 @@ const Layout = ({ location, title, children }) => {
       <footer className={layout.footer}>
         <div className={layout.revueEmbed}>
           <div className={layout.revueEmbedTitle}>
-            If you found this informative you can subscribe here
+            If you found the content informative you can subscribe here
           </div>
           <form
             action="https://www.getrevue.co/profile/rohitdhatrak/add_subscriber"

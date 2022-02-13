@@ -1,6 +1,6 @@
 ---
 title: Work at Wyzr
-date: "2022-11-02T22:12:03.284Z"
+date: "2022-02-11T22:12:03.284Z"
 description: "This blog is about my journey, the work I have done at wyzr and the things I have learned through that journey"
 image: wyzr_pizza_party.png
 ---

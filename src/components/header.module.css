@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  margin-bottom: 4em;
+}
+
+.links {
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.5em;
+  padding: 0.3em 0.5em;
+  border: none;
+  background-color: transparent;
+}

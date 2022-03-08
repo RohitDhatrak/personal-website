@@ -1,34 +1,18 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import Bio from "../components/bio"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import home from "./home.module.css"
-import { RightArrow } from "../svg"
-import { projectsData } from "../data"
-import { Project } from "../components/project"
 
-const Home = ({ data, location }) => {
+const Blog = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes.slice(0, 3)
-  const projects = projectsData.slice(0, 3)
+  const posts = data.allMarkdownRemark.nodes
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="Rohit Dhatrak" pathname={location.pathname} />
-      <Bio />
-
-      <h2 className="home-subheading">Recent Projects</h2>
-      {projects.map(project => (
-        <Project key={project.name} project={project} isHome={true} />
-      ))}
-      <Link to="/projects">
-        <div className="link project-link">
-          View all projects <RightArrow colour={"var(--color-primary)"} />
-        </div>
-      </Link>
-
-      <h2 className="home-subheading">Recent Posts</h2>
+      <h1>All Posts</h1>
+      <SEO title="Blog | Rohit Dhatrak" pathname={location.pathname} />
       <ol style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
@@ -42,9 +26,9 @@ const Home = ({ data, location }) => {
                   itemType="http://schema.org/Article"
                 >
                   <header>
-                    <h3>
+                    <h2>
                       <span itemProp="headline">{title}</span>
-                    </h3>
+                    </h2>
                     <small>{post.frontmatter.date}</small>
                   </header>
                   <section>
@@ -61,16 +45,11 @@ const Home = ({ data, location }) => {
           )
         })}
       </ol>
-      <Link to="/blog">
-        <div className="link">
-          Read all posts <RightArrow colour={"var(--color-primary)"} />
-        </div>
-      </Link>
     </Layout>
   )
 }
 
-export default Home
+export default Blog
 
 export const pageQuery = graphql`
   query {

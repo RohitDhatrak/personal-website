@@ -3,15 +3,16 @@ module.exports = {
     title: `All Posts`,
     author: {
       name: `Rohit Dhatrak`,
-      summary: `I write about my learning from Web Development, DS & Algorithms in a simplified and accessible manner. I also write about books that I have read.`,
+      summary: `Hello, I’m Rohit Dhatrak, a developer skilled in JavaScript and React. I have interned at Wyzr as a full-stack developer where I have worked with Next.js, ChakraUI, Node and MongoDB. I’m a Teaching Assistant at neoG which is a coding boot camp where I’m responsible for conducting doubt solving sessions and reviewing projects. I like to explore and learn new web technologies so I have made some projects using TypeScript, GraphQL, Redux and React Native. I’m also a part of various online communities where I have hosted book clubs on JavaScript.`,
     },
-    description: `Here I write about my learning from Web Development, DS & Algorithms in a simplified and accessible manner. I also write about books that I have read.`,
+    description: `Hello, I’m Rohit Dhatrak, a developer skilled in JavaScript and React. I have interned at Wyzr as a full-stack developer where I have worked with Next.js, ChakraUI, Node and MongoDB. I’m a Teaching Assistant at neoG which is a coding boot camp where I’m responsible for conducting doubt solving sessions and reviewing projects. I like to explore and learn new web technologies so I have made some projects using TypeScript, GraphQL, Redux and React Native. I’m also a part of various online communities where I have hosted book clubs on JavaScript.`,
     siteUrl: `https://rohitdhatrak.com`,
     social: {
       twitter: `rohit_dhatrak_`,
       linkedin: `rohitdhatrak`,
       github: `RohitDhatrak`,
       instagram: `rohit_dhatrak_`,
+      link: "https://rohitdhatrak.bio.link",
     },
     image: "/profile-pic.jpg",
     keywords: [

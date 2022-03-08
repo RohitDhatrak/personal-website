@@ -1,0 +1,30 @@
+.container > h2 {
+  color: var(--color-primary);
+}
+
+.container > p {
+  margin-bottom: 1em;
+}
+
+.button-container {
+  display: flex;
+  gap: 1em;
+}
+
+.button {
+  font-size: 1rem;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.primary {
+  background-color: var(--color-primary);
+  color: var(--color-accent);
+}
+
+.secondary {
+  background-color: var(--color-accent);
+  color: var(--color-primary);
+}

@@ -5,17 +5,19 @@ description: "What is Time and Space Complexity? What do we mean when we say an 
 image: time-complexity.png
 ---
 
-#####What is time complexity?
+## What is time complexity?
+
 Time Complexity could be used to determine if our algorithm will be able to run in the required amount of time by looking at how the runtime grows according to the input. We don't measure the runtime in seconds as it depends on various factors which we don't want to take into consideration. We are interested in the behaviour of an algorithm for a large number of inputs.
 
-#####How do we measure time complexity?
+## How do we measure time complexity?
+
 Big-O notation gives the upper bound of the time complexity of an algorithm.
 
 Let's say we have a function T(n) which gives the runtime of an algorithm where n is the number of inputs. If we can find a function f(n) which when multiplied by c is greater than T(n) then we can say that f(n) upper bounds T(n).
 
 This can be mathematically represented as T(n) <= c \* f(n). And we write it as O(f(n)).
 
-#####How To Calculate Big O
+## How To Calculate Big O
 
 i\) Break your algorithm into individual operations.\
 ii\) Calculate the no of times each operation repeats.\
@@ -25,9 +27,9 @@ v\) Drop the lower order terms.
 
 We get rid of all the constant multiples and the lower order terms because they don't contribute much for large values of input. We'll see the steps in the examples below.
 
-#####What are the different time complexities?
+## What are the different time complexities?
 
-######1. Constant time
+### 1. Constant time
 
 ```
 int average(int a, int b) {
@@ -43,7 +45,7 @@ In this function, each step occurs once so after adding all the steps we get 2. 
 
 Therefore as the input increases, the time taken by the algorithm stays the same.
 
-######2. Linear time
+### 2. Linear time
 
 ```
 int find(int arr[], int key) {
@@ -66,7 +68,7 @@ By dropping the lower order term 2, we get 2n. Then we will drop the constant mu
 
 Therefore as input increases, the time taken by the algorithm increases linearly.
 
-######3. Quadratic time
+### 3. Quadratic time
 
 ```
 int findDuplicates(int array[]) {
@@ -90,7 +92,7 @@ By dropping the lower order term and the constant multiple we get O(n<sup>2</sup
 
 Therefore as input increases, the time taken by the algorithm increases in a quadratic fashion.
 
-######4. Logarithmic time
+### 4. Logarithmic time
 
 Log is written as log<sub> x</sub> y
 
@@ -167,7 +169,8 @@ There are other time complexities as well like O(nlog n), O(c<sup>n</sup>), O(n!
 
 An interesting thing to note is that O(log n) is slower than O(n) for smaller values. But we don't really care about small values we check for the behaviour of the algorithm when the input is large.
 
-#####What is Space Complexity?
+## What is Space Complexity?
+
 It is same as time complexity but instead of looking at how much more time our algorithm takes as the input grows we look at how much more space does our algorithm consume when we the input grows.
 
 We often optimize for time over space because usually space is not an issue but we want our algorithms to be faster. However, in scenarios like working with embedded systems where we have a memory constrain, space complexity becomes equally important.

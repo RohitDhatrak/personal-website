@@ -40,7 +40,7 @@
   --fontWeight-bold: 700;
   --fontWeight-extrabold: 800;
   --fontWeight-black: 900;
-  --fontSize-root: 16px;
+  --fontSize-root: 18px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;
@@ -68,6 +68,7 @@
 :after,
 :before {
   box-sizing: border-box;
+  font-family: var(--fontFamily-sans);
 }
 
 html {
@@ -99,7 +100,7 @@ h5,
 h6 {
   font-family: var(--font-heading);
   margin-top: var(--spacing-12);
-  margin-bottom: var(--spacing-6);
+  margin-bottom: var(--spacing-2);
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
 }
@@ -109,34 +110,36 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-medium);
   color: var(--color-heading);
 }
 
 h1 {
-  font-weight: var(--fontWeight-black);
-  font-size: var(--fontSize-6);
+  font-weight: var(--fontWeight-bold);
+  font-size: var(--fontSize-5);
   color: var(--color-heading-black);
 }
 
 h2 {
-  font-size: var(--fontSize-5);
+  font-size: var(--fontSize-4);
+  font-weight: var(--fontWeight-semibold);
 }
 
 h3 {
-  font-size: var(--fontSize-4);
+  font-size: var(--fontSize-3);
+  font-weight: var(--fontWeight-semibold);
 }
 
 h4 {
-  font-size: var(--fontSize-3);
-}
-
-h5 {
   font-size: var(--fontSize-2);
 }
 
-h6 {
+h5 {
   font-size: var(--fontSize-1);
+}
+
+h6 {
+  font-size: var(--fontSize-0);
 }
 
 h1 > a {
@@ -227,6 +230,7 @@ table thead tr th {
 
 a {
   color: var(--color-primary);
+  text-decoration: none;
 }
 
 a:hover,
@@ -234,7 +238,52 @@ a:focus {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
 /* Custom classes */
+
+.scale-12 {
+  transform: scale(1.4);
+}
+
+.scale-13 {
+  transform: scale(1.5);
+}
+
+.scale-14 {
+  transform: scale(1.6);
+}
+
+.scale-15 {
+  transform: scale(1.7);
+}
+
+.page-header {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-8);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.project-link {
+  margin-top: 2em;
+}
+
+.home-subheading {
+  color: var(--color-primary);
+}
 
 .global-wrapper {
   margin: var(--spacing-0) auto;

@@ -6,6 +6,11 @@
   margin-bottom: 1em;
 }
 
+.preview {
+  margin-bottom: 1em;
+  width: 100%;
+}
+
 .button-container {
   display: flex;
   gap: 1em;

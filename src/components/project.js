@@ -7,7 +7,12 @@ export function Project({ project, isHome }) {
       {!isHome && <h2>{project.name}</h2>}
       {isHome && <h3>{project.name}</h3>}
       {!isHome && (
-        <img src={`https://www.rohitdhatrak.com/${project.image}`} alt="" />
+        <img
+          src={`https://www.rohitdhatrak.com/${project.image}`}
+          alt=""
+          className={card.preview}
+          style={{ width: project.imageWidth }}
+        />
       )}
       <p>{project.description}</p>
       <p>

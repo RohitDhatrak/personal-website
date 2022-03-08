@@ -32,6 +32,7 @@ export const projectsData = [
     description:
       "LingoHub is an app where you can interact with native speakers of the language you want to learn. To try the app go to the playstore and download an app called Expo then scan the QR code given in the link below.",
     image: "lingohub.jpg",
+    imageWidth: "50%",
     link: "https://expo.dev/@rohitdhatrak/LingoHub",
     code: "https://github.com/RohitDhatrak/LingoHub",
     techStack:

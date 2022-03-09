@@ -5,6 +5,8 @@ description: "What is Time and Space Complexity? What do we mean when we say an 
 image: time-complexity.png
 ---
 
+This blog was also published in [Analytics Vidhya](https://medium.com/analytics-vidhya/time-and-space-complexity-3b8016c0f3ae)
+
 ## What is time complexity?
 
 Time Complexity could be used to determine if our algorithm will be able to run in the required amount of time by looking at how the runtime grows according to the input. We don't measure the runtime in seconds as it depends on various factors which we don't want to take into consideration. We are interested in the behaviour of an algorithm for a large number of inputs.

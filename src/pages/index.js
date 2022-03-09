@@ -29,7 +29,7 @@ const Home = ({ data, location }) => {
       {projects.map(project => (
         <Project key={project.name} project={project} isHome={true} />
       ))}
-      <Link to="/projects">
+      <Link to="/projects" className="link">
         <div className="link project-link">
           View all projects <RightArrow colour={"var(--color-primary)"} />
         </div>
@@ -68,7 +68,7 @@ const Home = ({ data, location }) => {
           )
         })}
       </ol>
-      <Link to="/blog">
+      <Link to="/blog" className="link">
         <div className="link">
           Read all posts <RightArrow colour={"var(--color-primary)"} />
         </div>

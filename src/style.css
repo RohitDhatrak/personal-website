@@ -230,7 +230,7 @@ table thead tr th {
 
 a {
   color: var(--color-primary);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 a:hover,
@@ -275,6 +275,7 @@ img {
   color: var(--color-primary);
   cursor: pointer;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .project-link {

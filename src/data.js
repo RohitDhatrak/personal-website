@@ -53,11 +53,21 @@ export const workData = [
   {
     company: "Wyzr",
     time: "Jun 2021 - Feb 2022",
-    title: "Full Stack Developer",
+    role: "Full Stack Developer (Intern)",
     description: [
       "Built the entire reading interface using Next.js and Chakra UI.",
       "Used static site generation (SSG) for faster loading time.",
       "Built an end to end nested commenting system. Used node and MongoDB for the backend.",
     ],
+  },
+]
+
+export const talksData = [
+  {
+    id: "Qs1A76JyutU",
+    title: "styled-components + TypeScript in a React Application",
+    time: "24th July 2021",
+    description:
+      "In this talk I go through what styled-components has to offer and some of the advantages of using styled-components. In the end I also show how you can create your own utility based mini-component library using styled-components.",
   },
 ]

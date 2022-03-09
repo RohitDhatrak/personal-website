@@ -5,8 +5,10 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import home from "./home.module.css"
 import { RightArrow } from "../svg"
-import { projectsData } from "../data"
+import { projectsData, workData, talksData } from "../data"
 import { Project } from "../components/project"
+import { Work } from "../components/work"
+import { Talk } from "../components/talk"
 
 const Home = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -17,6 +19,11 @@ const Home = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="Rohit Dhatrak" pathname={location.pathname} />
       <Bio />
+
+      <h2 className="home-subheading">Work Experience</h2>
+      {workData.map(work => (
+        <Work key={work.name} work={work} isHome={true} />
+      ))}
 
       <h2 className="home-subheading">Recent Projects</h2>
       {projects.map(project => (
@@ -66,6 +73,11 @@ const Home = ({ data, location }) => {
           Read all posts <RightArrow colour={"var(--color-primary)"} />
         </div>
       </Link>
+
+      <h2 className="home-subheading">Talks</h2>
+      {talksData.map(talk => (
+        <Talk key={talk.name} talk={talk} isHome={true} />
+      ))}
     </Layout>
   )
 }

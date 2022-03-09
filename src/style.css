@@ -283,6 +283,7 @@ img {
 
 .home-subheading {
   color: var(--color-primary);
+  margin-top: 3em;
 }
 
 .global-wrapper {

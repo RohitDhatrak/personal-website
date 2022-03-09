@@ -1,0 +1,13 @@
+.role,
+.time {
+  margin-bottom: 0;
+}
+
+.time {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+}
+
+.container > ul {
+  margin-left: 1em;
+}
